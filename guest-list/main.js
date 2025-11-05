@@ -20,7 +20,10 @@ refused.textContent = "Refuse: ";
 
 for (let person of people) {
     if (person === "Lola" || person === "Phil") {
-        refused.textContent += `${person} `;
+        refused.textContent += `${person}, `;
     }
-    admitted.textContent += `${person} `;
+    admitted.textContent += `${person}, `;
 }
+
+refused.textContent = `${refused.textContent.slice(0, -2)}.`;
+admitted.textContent = `${admitted.textContent.slice(0, -2)}.`;
