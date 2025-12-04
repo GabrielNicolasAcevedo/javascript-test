@@ -77,3 +77,25 @@ function getAverageAge(array) {
 console.log("Average age:")
 console.log(getAverageAge(arr));
 console.log("__________________")
+
+// 5. Create keyed object from array
+// Reassign users
+users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+
+function groupById(array) {
+    return array.reduce((obj, value) => {
+        obj[value.id] = value;
+        return obj
+    }, {})
+};
+
+console.log("5. Create keyed object from array");
+console.log(users);
+
+let usersById = groupById(users);
+console.log("Keyed users");
+console.log(usersById);
