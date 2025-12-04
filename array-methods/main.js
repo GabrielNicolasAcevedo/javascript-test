@@ -58,3 +58,22 @@ sortByAge(arr);
 console.log(arr);
 console.log("___________________________")
 
+// 4. Get Average Age
+// Reassign variables:
+john = { name: "John", age: 25 };
+pete = { name: "Pete", age: 30 };
+mary = { name: "Mary", age: 29 };
+
+arr = [ john, pete, mary ];
+
+console.log("4. Get Average Age")
+console.log(arr);
+
+function getAverageAge(array) {
+    return array.reduce((sum, user) => 
+        sum + user.age, 0) / array.length;   
+}
+// Refresh on reduce method
+console.log("Average age:")
+console.log(getAverageAge(arr));
+console.log("__________________")
