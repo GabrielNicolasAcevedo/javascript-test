@@ -43,8 +43,8 @@ const commentIndex = comments.findIndex(comment =>
 console.log(commentIndex);
 
 const newComments = [
-    ...comments.slice(commentIndex, 1),
-    ...comments.slice(commentIndex)
+    ...comments.slice(0, commentIndex),
+    ...comments.slice(commentIndex + 1)
 ]
 // Remember the difference between slice and splice
 
