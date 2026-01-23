@@ -9,7 +9,7 @@ form {
     border-radius: 1em;
 }
 
-p + p {
+div + div {
     margin-top: 1em;
 }
 
